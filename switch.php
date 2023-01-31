@@ -37,6 +37,7 @@ switch ($tourist) {
     echo "Không thấy điểm du lịch nào phù hợp với tôi cả ";
 }
 ?>
+sđsd
  
 </body>
 </html>
