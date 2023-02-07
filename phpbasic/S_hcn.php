@@ -42,6 +42,34 @@
         $dai = $_POST["dai"];
         $rong =  $_POST["rong"];
         $dt = $dai*$rong;
+        // if($dt >=200){
+        // echo "Nên xây dựng Villa";
+        // }
+        // elseif ($dt>=150) {
+        // echo "Nên xây biệt thự";
+        // }
+        // elseif ($dt<=100) {
+        // echo "Nên xây nhà cao tầng";
+        // }
+        // else {
+        // echo "Nên xây nhà cấp 4";
+        // }
+        echo "<br>";
+        echo "<br>";
+        switch ($dt) {
+            case ($dt >= 200):
+                echo "Nên xây dựng Villa";
+                    break;
+            case ($dt >= 150):
+                echo "Nên xây dựng biệt thự";
+                    break; 
+            case ($dt >= 100):
+                echo "Nên xây dựng nhà cao tầng";
+                    break;
+            default:
+                echo "Nên xây dựng nhà cấp 4";
+                    break;
+        }
     ?>
    
     <form id="forml" name="forml" method="post" action="S_hcn.php">
@@ -86,7 +114,15 @@
                 <td></td>
             </tr>
         </table>
+
+        <script >
+            document.getElementsById("lll").innerHTML=<?php echo $dt; ?>
+        </script>
     </form>
+    <p id="lll"></p>
     
 </body>
+<script >
+    document.getElementsById("lll").innerHTML=<?php echo $dt; ?>
+</script>
 </html>
