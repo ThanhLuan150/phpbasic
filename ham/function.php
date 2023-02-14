@@ -40,7 +40,7 @@
                     if ($_POST["loaiphong"]==4) {
                          echo "D";
                     }
-            //    return $loaiphong;
+                return $loaiphong;
 
                 }
         }
@@ -50,12 +50,12 @@
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     if (empty($_POST["tienan"])) {
                         $tienanErr = "Vui lòng nhập tiền:";
-                        // return  $tienanErr;
+                         return  $tienanErr;
                     }
                     else
                     {
                         $tienan = test_input($_POST["tienan"]);
-                        // return  $tienan;
+                         return  $tienan;
                     }
             }
         }
@@ -67,21 +67,21 @@
                 if ($_SERVER["REQUEST_METHOD"] == "POST"){
                     if (empty($_POST["checkin"])){
                         $checkinErr = "Vui lòng điền đầy đủ";
-                        // return  $checkinErr;
+                         return  $checkinErr;
                     }
                     else 
                         {
                             $checkin = test_input($_POST["checkin"]);
-                            // return  $checkin;
+                             return  $checkin;
                         }
                     if (empty($_POST["checkout"])){
                         $checkoutErr = "Vui lòng điền đầy đủ";
-                        // return $checkoutErr;
+                         return $checkoutErr;
                         }
                     else 
                         {
                         $checkout = test_input($_POST["checkout"]);
-                        // return $checkout;
+                         return $checkout;
                         }
                     }
                 
