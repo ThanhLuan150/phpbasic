@@ -67,7 +67,7 @@
                 if ($_SERVER["REQUEST_METHOD"] == "POST"){
                     if (empty($_POST["checkin"])){
                         $checkinErr = "Vui lòng điền đầy đủ";
-                         return  $checkinErr;
+                         return $checkinErr;
                     }
                     else 
                         {
@@ -90,7 +90,7 @@
              
         
 
-            function thoigian($date){
+            function thoigian($date,$checkin,$checkout){
                 $checkin=strtotime( $_POST["checkin"]);
                 $checkout=strtotime($_POST["checkout"]); 
                 return $date = abs( $checkout- $checkin) ;
