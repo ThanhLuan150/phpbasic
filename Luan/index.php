@@ -16,9 +16,9 @@
              ini_set('display_errors',0);
              $loaiphong= $_POST["loaiphong"];
              $tienan = $_POST["tienan"];
-             $giacla=$_POST["giatla"];
-             $ansang=$_POST["ansang"];
-             $tamhoi=$_POST["tamhoi"];
+             $giacla =$_POST["giatla"];
+             $ansang =$_POST["ansang"];
+             $tamhoi =$_POST["tamhoi"];
              $checkin=strtotime( $_POST["checkin"]);
              $checkout=strtotime($_POST["checkout"]); 
              $date = abs($checkout- $checkin)  ;
@@ -28,16 +28,16 @@
              
 
              if ($_POST["loaiphong"]) {
-                if ($_POST["1"]) {
+                if ($_POST["A"]) {
                      echo "A";
                 }
-                if ($_POST["2"]) {
+                if ($_POST["B"]) {
                      echo "B";
                  }
-                 if ($_POST["3"]) {
+                 if ($_POST["C"]) {
                      echo "C";
                 }
-                if ($_POST["4"]) {
+                if ($_POST["D"]) {
                      echo "D";
             }
             }
@@ -63,26 +63,12 @@
                  {
                     $checkout = test_input($_POST["checkout"]);
                  }
-                 if (empty($_POST["giacla"])){
-                    $giaclaErr = "Vui lòng chọn";
+                 if (empty($_POST["tienan"])){
+                    $tienanErr = "Vui lòng điền đầy đủ";
                  }
                  else 
                  {
-                    $giacla = test_input($_POST["giacla"]);
-                 }
-                 if (empty($_POST["ansang"])){
-                    $ansangErr = "Vui lòng chọn";
-                 }
-                 else 
-                 {
-                    $ansang = test_input($_POST["ansang"]);
-                 }
-                 if (empty($_POST["tamhoi"])){
-                    $tamhoiErr = "Vui lòng chọn";
-                 }
-                 else 
-                 {
-                    $tamhoi = test_input($_POST["tamhoi"]);
+                    $tienan = test_input($_POST["tienan"]);
                  }
             }
             function test_input($data) {
@@ -120,13 +106,10 @@
             <br> <br>
                 Dịch vu:
                     <input type="radio" name="giacla" value="1000"> Giặt là
-                    <span class="error">* <?php echo $checkinErr;?></span>
                 <br> <br>
                     <input type="radio" name="ansang" value="2000"> Ăn sáng
-                    <span class="error">* <?php echo $checkinErr;?></span>
                 <br> <br>
                     <input type="radio" name="tamhoi" value="3000"> Tắm hơi
-                    <span class="error">* <?php echo $checkinErr;?></span>
                 <br><br>
                 
             <br> <br>
