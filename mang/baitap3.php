@@ -16,7 +16,8 @@
     <style>
         .container{
             margin-top:10px;
-            
+        
+
         }
         .title{
             color:white;
@@ -28,12 +29,6 @@
             gap:20px;
             list-style-type:none;
             
-
-            
-        }
-        .idsp{
-            border: 1px solid black;
-
         }
 </style>
 </head>
@@ -41,25 +36,25 @@
 <?php
         $phones = array(
             '<p style="border-radius:15px;background:red;">Nổi bậc nhất</p>' => array(
-                '<div class="idsp">NB01</div>' => array(
+                'NB01' => array(
                     'image' => '<img src="https://cdn.nguyenkimmall.com/images/detailed/716/10048676-dien-thoai-samsung-galaxy-a52-4g-128gb-xanh-1.jpg" style="width:250px; height:300px" />',
                     'name' =>'Samsung Galaxy  A52',
                     'price' =>'<p style="color:red">4000000 VNĐ <del style="color:black">4400000 VND </del> </p> ',
                     'icon' => '<i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i> <span>1999 đánh giá</span>'
                 ),
-                '<div  class="idsp">NB02</div>' => array(
+                'NB02' => array(
                     'image' => '<img src="https://cdn.tgdd.vn/Products/Images/42/226463/Samsung-Galaxy-a32-5G--600x600.jpg" style="width:250px; height:300px" />',
                     'name' =>'Samsung Galaxy  A32',
                     'price' =>'<p style="color:red">4000000 VNĐ <del style="color:black">4400000 VND </del> </p> ',
                     'icon' => '<i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><span>1100 đánh giá</span>'
                 ),
-                '<div  class="idsp">NB03</div>' => array(
+                'NB03' => array(
                     'image' => '<img src="https://shophuyhoang.com/wp-content/uploads/2021/04/2246ee27e39a2e22e110be73abddd7e9-1024x1024.jpg" style="width:250px; height:300px" />',
                     'name' =>'Samsung Galaxy  A42',
                     'price' =>'<p style="color:red">4000000 VNĐ <del style="color:black">4400000 VND </del>  </p>',
                     'icon' => '<i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><span>999 đánh giá</span>'
                 ),
-                '<div  class="idsp">NB04</div>' => array(
+                'NB04' => array(
                     'image' => '<img src="https://cf.shopee.vn/file/23447cce04acd51e777a96d20d222643" style="width:250px; height:300px" />',
                     'name' =>'Samsung Galaxy  A22',
                     'price' =>'<p style="color:red">4000000 VNĐ <del style="color:black">4400000 VND </del> </p> ',
@@ -67,25 +62,25 @@
                 ),
             ),
             '<p style="border-radius:15px;background:blue;">Sản phẩm mới</p>'  => array(
-                '<div  class="idsp">SP01</div>' => array(
+                'SP01' => array(
                     'image' => '<img src="https://cdn.nguyenkimmall.com/images/detailed/716/10048676-dien-thoai-samsung-galaxy-a52-4g-128gb-xanh-1.jpg" style="width:250px; height:300px" />',
                     'name' =>'Samsung Galaxy  A52',
                     'price' =>' <p style="color:red">4000000 VNĐ <del style="color:black">4400000 VND </del> </p> ',
                     'icon' => '<i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><span> 3999 đánh giá</span>'
                 ),
-                '<div  class="idsp">SP02</div>' => array(
+                'SP02' => array(
                     'image' => '<img src="https://cdn.nguyenkimmall.com/images/detailed/716/10048676-dien-thoai-samsung-galaxy-a52-4g-128gb-xanh-1.jpg" style="width:250px; height:300px" />',
                     'name' =>'Samsung Galaxy  A52',
                     'price' =>'<p style="color:red">4000000 VNĐ <del style="color:black">4400000 VND </del></p>',
                     'icon' => '<i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i> <span>  2000 đánh giá</span>'
                 ),
-                '<div  class="idsp">SP03</div>' => array(
+                'SP03' => array(
                     'image' => '<img src="https://cdn.nguyenkimmall.com/images/detailed/716/10048676-dien-thoai-samsung-galaxy-a52-4g-128gb-xanh-1.jpg" style="width:250px; height:300px" />',
                     'name' =>'Samsung Galaxy  A52',
                     'price' =>'<p style="color:red">4000000 VNĐ  <del style="color:black">4400000 VND </del></p> ',
                     'icon' => '<i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><i class="fa-solid fa-star" style="color:orange"></i><span>999 đánh giá</span>'
                 ),
-                '<div  class="idsp">SP04</div>' => array(
+                'SP04' => array(
                     'image' => '<img src="https://cdn.nguyenkimmall.com/images/detailed/716/10048676-dien-thoai-samsung-galaxy-a52-4g-128gb-xanh-1.jpg" style="width:250px; height:300px" />',
                     'name' =>'Samsung Galaxy  A52',
                     'price' =>' <p style="color:red">4000000 VNĐ  <del style="color:black">4400000 VND </del> </p>',
