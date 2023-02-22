@@ -54,8 +54,8 @@
         echo '<div class="echo">Xin chào '. $_COOKIE["khach_hang"].'<br>';
         echo '<a href="cookies.php"> Click để quay về trang đăng nhập </a>';
         echo '</div>';
-        echo '<img class="img1" src="https://backlinks.vn/hinh-anh-shop-quan-ao/imager_113620.jpg">';
-        echo '<img class="img2" src="https://tse2.mm.bing.net/th?id=OIP.OFwEtBDE6V4Geeo-7u8quAHaFJ&pid=Api&P=0">';
+        echo '<img class="image1" src="https://backlinks.vn/hinh-anh-shop-quan-ao/imager_113620.jpg">';
+        echo '<img class="image2" src="https://tse2.mm.bing.net/th?id=OIP.OFwEtBDE6V4Geeo-7u8quAHaFJ&pid=Api&P=0">';
 
     ?>
 
