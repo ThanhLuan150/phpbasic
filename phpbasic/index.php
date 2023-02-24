@@ -17,7 +17,7 @@
     echo "$dt";
 
     ?> 
-    <h1 class='aa'><blog><?php echo "Em tên là Lê Trương Thành Luân"  ?></blog></h1>
+    <h1 class='aa'><blog><?php echo "Em tên là Lê Trương Thành"  ?></blog></h1>
 
 </body>
 </html>
