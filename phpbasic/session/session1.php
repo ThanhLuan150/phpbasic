@@ -18,7 +18,7 @@ session_start();
     .hienthi{
             background-color:green;
             width: 380px;
-            height: 150px;
+            height: 350px;
             margin-left: 400px;
             padding-top:20px;
             padding-left: 20px;
@@ -54,12 +54,12 @@ session_start();
     <?php 
         ini_set('display_errors',0);
         $_SESSION['user'] = array();
-        if (!empty($_POST['name']) && !empty ($_POST['mail']) && !empty($_POST['add'])&& !empty($_POST['phone']))
+        if (!empty($_POST['name']) && !empty ($_POST['mail']) && !empty($_POST['phone'])&& !empty($_POST['add']))
         {
             $_SESSION['user'][]= $_POST['name'];
             $_SESSION['user'][]= $_POST['mail'];
-            $_SESSION['user'][]= $_POST['add'];
             $_SESSION['user'][]= $_POST['phone'];
+            $_SESSION['user'][]= $_POST['add'];
         }
     
          
